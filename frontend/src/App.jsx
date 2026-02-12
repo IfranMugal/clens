@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Change from "./pages/Change";
 import ModelSuggestion from "./pages/ModelSuggestion";
-import PromptOptimizer from "./pages/promptOptimizer";
+import PromptOptimizer from "./pages/PromptOptimizer";
 import EnterpriseBatch from "./pages/EnterpriseBatch";
 import Navbar from "./components/Navbar";
 
@@ -51,7 +51,7 @@ function App() {
       {page === "dashboard" && <Dashboard user={user} />}
       {page === "change" && <Change user={user} />}
       {page === "models" && <ModelSuggestion user={user} />}
-      {page === "optimizer" && <promptOptimizer user={user} />}
+      {page === "optimizer" && <PromptOptimizer user={user} />}
       {page === "batch" && <EnterpriseBatch />}
     </>
   );
